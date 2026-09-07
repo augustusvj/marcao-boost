@@ -1,0 +1,15 @@
+MARCÃO BOOST - TERMOS DO COMPONENTE AMD ADLX
+
+O componente AMD do Marcão Boost é licenciado exclusivamente para uso em sistemas baseados em produtos ou componentes AMD compatíveis.
+
+Ao utilizar o componente, o usuário recebe uma licença limitada, não exclusiva, revogável e intransferível. É proibido transferir ou duplicar o software, exceto para backup razoável, assim como desmontar, descompilar, realizar engenharia reversa ou criar trabalhos derivados.
+
+O software é fornecido "no estado em que se encontra", sem garantias expressas, implícitas ou legais. O licenciador, a AMD e seus respectivos licenciadores não se responsabilizam por danos diretos, indiretos, incidentais, especiais, punitivos ou consequenciais decorrentes do uso.
+
+O usuário deve cumprir as leis e os regulamentos de importação e exportação aplicáveis. O software não pode ser utilizado ou transferido para finalidades, países ou usuários proibidos pela legislação aplicável.
+
+A Advanced Micro Devices, Inc. (AMD) é terceira beneficiária destes termos. Estes termos também se aplicam às atualizações futuras do componente.
+
+Ao selecionar "Sim" na confirmação exibida antes do primeiro ajuste AMD, o usuário declara que leu e aceitou estes termos.
+
+AMD, Radeon e combinações relacionadas são marcas comerciais da Advanced Micro Devices, Inc. NVIDIA é marca comercial da NVIDIA Corporation.

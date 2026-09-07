@@ -1,0 +1,26 @@
+# Build outputs
+outputs/
+bin/
+obj/
+*.obj
+*.pdb
+
+# Cloudflare / Node
+server/node_modules/
+server/.wrangler/
+server/wrangler.jsonc
+server/worker-configuration.d.ts
+
+# Secrets and local configuration
+*.secret
+*.secrets
+.env
+.env.*
+!.env.example
+
+# Editor / operating system
+.vs/
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini

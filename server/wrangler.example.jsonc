@@ -1,0 +1,22 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "marcao-boost-api",
+  "main": "src/worker.ts",
+  "compatibility_date": "2026-09-07",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "preview_urls": false,
+  "observability": {
+    "enabled": true,
+    "logs": { "enabled": true, "head_sampling_rate": 1 }
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "marcao-boost-users",
+      "database_id": "COLOQUE_O_ID_DO_SEU_D1_AQUI",
+      "migrations_dir": "./migrations"
+    }
+  ],
+  "vars": { "APP_VERSION": "1.0" }
+}

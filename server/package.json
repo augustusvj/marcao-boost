@@ -1,0 +1,13 @@
+{
+  "name": "marcao-boost-api",
+  "private": true,
+  "scripts": {
+    "check": "wrangler deploy --dry-run",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "4.129.1",
+    "@types/node": "24.7.0",
+    "typescript": "5.9.2"
+  }
+}
