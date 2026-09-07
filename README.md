@@ -7,7 +7,7 @@
   [![Versão](https://img.shields.io/badge/versão-2.3-9cff43?style=flat-square)](https://github.com/augustusvj/marcao-boost/releases/latest)
   [![Cloudflare](https://img.shields.io/badge/API-Cloudflare%20Workers-f59e0b?style=flat-square)](server)
 
-  [Baixar Marcão Boost](https://github.com/augustusvj/marcao-boost/releases/latest) · [English](README.en.md)
+  [Baixar Marcão Boost 2.3](https://github.com/augustusvj/marcao-boost/releases/download/v2.3.0/MarcaoBoost-2.3-Cliente.zip) · [English](README.en.md)
 </div>
 
 > O download público contém somente o aplicativo do cliente. O executável Marcão Boost Gestão é reservado ao proprietário e não é distribuído.
@@ -24,8 +24,8 @@ O projeto é formado por três partes:
 
 ## Download
 
-1. Abra a página de [Releases](https://github.com/augustusvj/marcao-boost/releases/latest).
-2. Baixe `MarcaoBoost-2.3-Cliente.zip`.
+1. [Baixe `MarcaoBoost-2.3-Cliente.zip`](https://github.com/augustusvj/marcao-boost/releases/download/v2.3.0/MarcaoBoost-2.3-Cliente.zip) ou abra a página de [Releases](https://github.com/augustusvj/marcao-boost/releases/latest).
+2. Confirme o SHA-256 do arquivo, se desejar.
 3. Extraia o ZIP e execute `MarcaoBoost.exe`.
 4. Confirme a solicitação de administrador do Windows.
 
@@ -121,4 +121,3 @@ O segredo é colocado somente no binário local durante a compilação por meio 
 ## Avisos legais
 
 NVIDIA, AMD, Microsoft e Cloudflare são marcas de seus respectivos proprietários. O Marcão Boost não é endossado por essas empresas. O código é disponibilizado publicamente para transparência e revisão; nenhuma licença geral de redistribuição é concedida neste momento. Componentes de terceiros seguem seus próprios termos.
-

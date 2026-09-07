@@ -7,7 +7,7 @@
   [![Version](https://img.shields.io/badge/version-2.3-9cff43?style=flat-square)](https://github.com/augustusvj/marcao-boost/releases/latest)
   [![Cloudflare](https://img.shields.io/badge/API-Cloudflare%20Workers-f59e0b?style=flat-square)](server)
 
-  [Download Marcão Boost](https://github.com/augustusvj/marcao-boost/releases/latest) · [Português](README.md)
+  [Download Marcão Boost 2.3](https://github.com/augustusvj/marcao-boost/releases/download/v2.3.0/MarcaoBoost-2.3-Cliente.zip) · [Português](README.md)
 </div>
 
 > The public download contains only the client application. The Marcão Boost Gestão executable is owner-only and is not distributed.
@@ -24,8 +24,8 @@ The project has three parts:
 
 ## Download
 
-1. Open the [Releases](https://github.com/augustusvj/marcao-boost/releases/latest) page.
-2. Download `MarcaoBoost-2.3-Cliente.zip`.
+1. [Download `MarcaoBoost-2.3-Cliente.zip`](https://github.com/augustusvj/marcao-boost/releases/download/v2.3.0/MarcaoBoost-2.3-Cliente.zip) or open the [Releases](https://github.com/augustusvj/marcao-boost/releases/latest) page.
+2. Verify the file's SHA-256 digest if desired.
 3. Extract the ZIP and run `MarcaoBoost.exe`.
 4. Accept the Windows administrator prompt.
 
