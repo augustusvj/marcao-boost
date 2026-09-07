@@ -10,7 +10,7 @@
   [Baixar Marcão Boost 2.3](https://github.com/augustusvj/marcao-boost/releases/download/v2.3.0/MarcaoBoost-2.3-Cliente.zip) · [English](README.en.md)
 </div>
 
-> O download público contém somente o aplicativo do cliente. O executável Marcão Boost Gestão é reservado ao proprietário e não é distribuído.
+> O download público contém somente o aplicativo do cliente. O executável Marcão Boost Gestão é reservado ao proprietário e entregue apenas pela área administrativa autenticada do site.
 
 ## Visão geral
 
@@ -56,7 +56,7 @@ O Marcão Boost não promete ganhos iguais em todos os computadores. Resultados 
 - Arquivos em uso ou protegidos são ignorados e informados ao usuário.
 - Senhas são derivadas com PBKDF2 e salt individual; sessões são armazenadas como hash no banco.
 - O segredo inicial da Gestão e credenciais reais não fazem parte deste repositório.
-- O binário da Gestão não é anexado às releases públicas.
+- O binário da Gestão não é anexado às releases públicas; a API libera o arquivo privado somente para uma sessão administrativa válida.
 
 Consulte também [SECURITY.md](SECURITY.md) e [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
@@ -105,6 +105,8 @@ npx wrangler d1 migrations apply marcao-boost-users --remote
 npx wrangler secret put BOOTSTRAP_KEY
 npm run deploy
 ```
+
+Para oferecer o download administrativo, crie `server/private-assets`, coloque nela o arquivo `MarcaoBoost-Gestao-1.1.zip` e publique novamente. Essa pasta é ignorada pelo Git e o Worker exige autenticação administrativa antes de entregar o arquivo.
 
 Altere `AppConfig.ApiUrl` nos dois arquivos `WpfShared.cs` para o endereço do seu Worker antes de compilar. A Gestão exige o segredo inicial apenas para a criação do primeiro proprietário; ele nunca deve ser commitado.
 

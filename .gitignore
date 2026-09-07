@@ -10,6 +10,8 @@ server/node_modules/
 server/.wrangler/
 server/wrangler.jsonc
 server/worker-configuration.d.ts
+server/private-assets/
+.wrangler/
 
 # Secrets and local configuration
 *.secret

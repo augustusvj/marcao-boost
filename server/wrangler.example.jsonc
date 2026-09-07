@@ -18,5 +18,12 @@
       "migrations_dir": "./migrations"
     }
   ],
+  "assets": {
+    "directory": "./private-assets",
+    "binding": "ASSETS",
+    "run_worker_first": true,
+    "html_handling": "none",
+    "not_found_handling": "none"
+  },
   "vars": { "APP_VERSION": "1.0" }
 }

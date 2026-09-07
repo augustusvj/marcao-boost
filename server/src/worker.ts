@@ -1,4 +1,7 @@
-type Bindings = Cloudflare.Env & { BOOTSTRAP_KEY: string };
+type AssetBinding = {
+  fetch(input: Request | URL | string): Promise<Response>;
+};
+type Bindings = Cloudflare.Env & { BOOTSTRAP_KEY: string; ASSETS: AssetBinding };
 type JsonObject = Record<string, unknown>;
 interface UserRow {
   id: string; name: string; email: string; password_salt: string; password_hash: string;
@@ -127,6 +130,19 @@ export default {
 
       const admin = await auth(req, env, true);
       if (path.startsWith("/admin/") && !admin) return json({ error: "Acesso administrativo necessário." }, 401);
+
+      if (path === "/admin/download-management" && req.method === "GET") {
+        const asset = await env.ASSETS.fetch("https://assets.local/MarcaoBoost-Gestao-1.1.zip");
+        if (!asset.ok || !asset.body) return json({ error: "Instalador da Gestão indisponível." }, 404);
+
+        const downloadHeaders = new Headers(asset.headers);
+        downloadHeaders.set("content-type", "application/zip");
+        downloadHeaders.set("content-disposition", 'attachment; filename="MarcaoBoost-Gestao-1.1.zip"');
+        downloadHeaders.set("cache-control", "private, no-store");
+        downloadHeaders.set("access-control-allow-origin", "*");
+        downloadHeaders.set("x-content-type-options", "nosniff");
+        return new Response(asset.body, { status: 200, headers: downloadHeaders });
+      }
 
       if (path === "/admin/users" && req.method === "GET") {
         const q = (url.searchParams.get("q") || "").trim(); const rows = q ? await env.DB.prepare("SELECT * FROM users WHERE role='client' AND (name LIKE ? OR email LIKE ?) ORDER BY created_at DESC LIMIT 250").bind(`%${q}%`, `%${q}%`).all<UserRow>() : await env.DB.prepare("SELECT * FROM users WHERE role='client' ORDER BY created_at DESC LIMIT 250").all<UserRow>();
