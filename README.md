@@ -75,23 +75,8 @@ src/client/         aplicativo Marcão Boost Cliente
 src/admin/          código do painel Marcão Boost Gestão
 src/native/         integrações NVIDIA NVAPI e AMD ADLX
 server/             Cloudflare Worker, D1 e migrações
-website/            site oficial, autenticação e configuração do Railway
 .github/workflows/  geração automática de releases do cliente
 ```
-
-## Site
-
-O código completo do site oficial fica em [`website/`](website). Ele usa a mesma API e as mesmas contas do aplicativo. A área de Gestão e seu download aparecem somente para a conta administrativa autorizada.
-
-Para executar localmente:
-
-```powershell
-cd website
-npm install
-npm run dev
-```
-
-As instruções de publicação estão em [`website/RAILWAY.md`](website/RAILWAY.md).
 
 ## Compilar o cliente
 
