@@ -7,7 +7,7 @@
   [![Versão](https://img.shields.io/badge/versão-2.3-9cff43?style=flat-square)](https://github.com/augustusvj/marcao-boost/releases/latest)
   [![Cloudflare](https://img.shields.io/badge/API-Cloudflare%20Workers-f59e0b?style=flat-square)](server)
 
-  [Site oficial](https://marcaoboostsite-production.up.railway.app/) · [Baixar Marcão Boost 2.3](https://github.com/augustusvj/marcao-boost/releases/download/v2.3.0/MarcaoBoost-2.3-Cliente.zip) · [English](README.en.md)
+  [Site oficial](https://marcaoboostsite.vercel.app/) · [Baixar Marcão Boost 2.3](https://github.com/augustusvj/marcao-boost/releases/download/v2.3.0/MarcaoBoost-2.3-Cliente.zip) · [English](README.en.md)
 </div>
 
 > O download público contém somente o aplicativo do cliente. O executável Marcão Boost Gestão é reservado ao proprietário e entregue apenas pela área administrativa autenticada do site.

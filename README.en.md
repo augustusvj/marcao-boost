@@ -7,7 +7,7 @@
   [![Version](https://img.shields.io/badge/version-2.3-9cff43?style=flat-square)](https://github.com/augustusvj/marcao-boost/releases/latest)
   [![Cloudflare](https://img.shields.io/badge/API-Cloudflare%20Workers-f59e0b?style=flat-square)](server)
 
-  [Download Marcão Boost 2.3](https://github.com/augustusvj/marcao-boost/releases/download/v2.3.0/MarcaoBoost-2.3-Cliente.zip) · [Português](README.md)
+  [Official website](https://marcaoboostsite.vercel.app/) · [Download Marcão Boost 2.3](https://github.com/augustusvj/marcao-boost/releases/download/v2.3.0/MarcaoBoost-2.3-Cliente.zip) · [Português](README.md)
 </div>
 
 > The public download contains only the client application. The Marcão Boost Gestão executable is owner-only and is not distributed.
